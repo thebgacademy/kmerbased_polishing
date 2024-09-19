@@ -1,16 +1,16 @@
-# TEMPLATE
+# K-mer-Based Automated Polishing of T2T Genomes
 
 This session is part of [**Biodiversity Genomics Academy 2024**](https://thebgacademy.org/)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thebgacademy/TEMPLATE)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thebgacademy/kmerbased_polishing)
 
 [YouTube Recording](https://www.youtube.com/@thebiodiversitygenomicsacademy) <-- To be updated after BGA24
 
 ## Session Leader(s)
-
+Patrick Grady - University of Connecticut
 
 ## Description
-
+Introduction to and usage of the updated T2T Automated Polisher from the CHM13 project for application to other genome assemblies.
 
 
 ## Prerequisites
