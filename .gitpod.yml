@@ -1,6 +1,6 @@
 image: gitpod/workspace-full-vnc
 
-- name: SETUP
+name: SETUP
   init: |
     echo "Hello there - Welcome to GitPod"
 
