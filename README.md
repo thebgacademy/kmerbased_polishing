@@ -28,8 +28,6 @@ Introduction to and usage of the updated T2T Automated Polisher from the CHM13 p
 
 ## Instructions
 
-# T2T-Automated-Polishing
-
 Fully automatic K-mer based polishing of genome assemblies.
 
 Current version is unpublished. Please cite this paper, Arang Rhie's T2T-Polish Git Repository, and this Git Repository if any of the code shared in this repo is used:
