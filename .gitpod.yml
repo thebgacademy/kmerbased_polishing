@@ -1,9 +1,25 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-- name: SETUP
-  init: |
-    echo "Hello there - Welcome to GitPod"
+  - name: SETUP - btk install mamba and docker pull
+    init: |
+      cd /workspace
+      wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+      bash Mambaforge-$(uname)-$(uname -m).sh -b -p /workspace/mambaforge && rm Mambaforge-$(uname)-$(uname -m).sh
+      /workspace/mambaforge/bin/mamba init bash
+
+      source ${HOME}/.bashrc
+
+      mamba create -f kmerbased_polishing/env/auto_polisher_env_v3.yml
+
+  - name: SETUP
+    init: |
+      cd /workspace
+      chmod a+x *.pl *.py
+      /workspace/mambaforge/bin/mamba init bash
+      source ${HOME}/.bashrc
+      mamba activate t2t_automated_polishing
+      echo "Hello there - Welcome to GitPod"
 
 ports:
   - port: 5900
