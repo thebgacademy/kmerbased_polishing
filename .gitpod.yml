@@ -11,9 +11,11 @@ tasks:
       source ${HOME}/.bashrc
 
       mamba create -f kmerbased_polishing/env/auto_polisher_env_v3.yml
+      gp sync-done bundle
 
   - name: SETUP
-    init: |
+    init: gp sync-await bundle
+    command: |
       cd /workspace
       chmod a+x *.pl *.py
       /workspace/mambaforge/bin/mamba init bash
