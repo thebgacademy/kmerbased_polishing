@@ -10,7 +10,9 @@ tasks:
 
       source ${HOME}/.bashrc
 
-      mamba create -f kmerbased_polishing/env/auto_polisher_env_v3.yml
+      cd ./kmerbased_polishing/env/
+
+      mamba create --file auto_polisher_env_v3.yml -y
       gp sync-done bundle
 
   - name: SETUP
