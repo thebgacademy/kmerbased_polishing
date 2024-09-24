@@ -12,7 +12,7 @@ tasks:
 
       cd ./kmerbased_polishing/env/
 
-      conda create env --file auto_polisher_env_v3.yml -y
+      conda env create --name=autopolish --file=auto_polisher_env_v3.yml
       gp sync-done bundle
 
   - name: SETUP
