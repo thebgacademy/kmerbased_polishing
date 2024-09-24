@@ -22,7 +22,7 @@ tasks:
       chmod a+x *.pl *.py
       /workspace/mambaforge/bin/mamba init bash
       source ${HOME}/.bashrc
-      mamba activate t2t_automated_polishing
+      mamba activate autopolish
       echo "Hello there - Welcome to GitPod"
 
 ports:
